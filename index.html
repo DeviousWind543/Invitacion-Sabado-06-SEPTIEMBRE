@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Volvemos a decir que sí! - Leonardo y Cecilia</title>
+    <link rel="icon" type="image/png" href="sobres.png">
+    <style>
+        body {
+            margin: 0;
+            overflow-x: hidden;
+            background-color: #f0f0f0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+            position: relative;
+        }
+        #invitacion-container {
+            position: relative;
+            max-width: 650px;
+            width: 100%;
+            margin-top: 50px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            overflow: hidden;
+            background-color: #fff;
+        }
+        #invitacion-imagen {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        .boton-icono {
+            position: absolute;
+            z-index: 10;
+            display: block;
+            background: none;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+        .boton-icono img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 0;
+            box-shadow: 0;
+        }
+        .boton-icono:hover {
+            transform: scale(1.1);
+        }
+        .boton-sobre {
+            top: 68.7%;
+            right: 21.3%;
+            width: 10%;
+        }
+        .boton-gps {
+            bottom: 3%;
+            right: 89%;
+            width: 8%;
+        }
+        .sobre-flotante {
+            position: absolute;
+            bottom: -50px;
+            left: 0;
+            width: 25px;
+            height: auto;
+            z-index: -1;
+            opacity: 0;
+            animation: flotar 15s infinite linear;
+        }
+        @keyframes flotar {
+            0% { transform: translateY(0) rotate(0deg); opacity: 0; }
+            10% { opacity: 0.8; }
+            90% { opacity: 0.8; }
+            100% { transform: translateY(-120vh) rotate(360deg); opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="invitacion-container">
+        <img id="invitacion-imagen" src="Invitacion.jpg" alt="Invitación de boda de Leonardo y Cecilia">
+
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdV0-jWdA5vDxxk0_iVnb5GUlHt4_qkQE4QFPGq1EFxSTG0yA/viewform?usp=header" class="boton-icono boton-sobre" target="_blank">
+            <img src="SOBRE.png" alt="Icono de sobre">
+        </a>
+
+        <a href="https://maps.app.goo.gl/J3Kh71qkStVaym2s9" class="boton-icono boton-gps" target="_blank">
+            <img src="gps.png" alt="Icono de GPS">
+        </a>
+    </div>
+
+    <img src="sobres.png" class="sobre-flotante" style="animation-delay: 0s;" alt="Sobre flotante">
+    <img src="sobres.png" class="sobre-flotante" style="animation-delay: 3s; left: 20%;" alt="Sobre flotante">
+    <img src="sobres.png" class="sobre-flotante" style="animation-delay: 6s; left: 40%;" alt="Sobre flotante">
+    <img src="sobres.png" class="sobre-flotante" style="animation-delay: 9s; left: 60%;" alt="Sobre flotante">
+    <img src="sobres.png" class="sobre-flotante" style="animation-delay: 12s; left: 80%;" alt="Sobre flotante">
+
+</body>
+</html>
